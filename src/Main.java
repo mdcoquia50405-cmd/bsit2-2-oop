@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // --- Student Information Input ---
+ 
         System.out.print("Enter Student ID: ");
         String studentId = input.nextLine();
 
@@ -20,14 +20,12 @@ public class Main {
         System.out.print("Enter Section: ");
         String section = input.nextLine();
 
-        // --- Display Student Info ---
         System.out.println("\n=== STUDENT INFORMATION ===");
         System.out.println("Student ID: " + studentId);
         System.out.println("Student Name: " + firstName + " " + lastName);
         System.out.println("Course: " + course);
         System.out.println("Section: " + section);
 
-        // --- Score Input ---
         System.out.print("\nEnter Midterm Exam Score: ");
         int midterm = input.nextInt();
 
@@ -40,12 +38,11 @@ public class Main {
         System.out.print("Enter Attendance Percentage: ");
         int attendance = input.nextInt();
 
-        // --- Calculate Total and Average ---
         int totalScore = midterm + finalExam + project + attendance;
         double averageScore = (double) totalScore / 400 * 100;
         String remarks = (averageScore < 75) ? "FAILED" : "PASSED";
 
-        // --- Display Score and Result ---
+   
         System.out.println("\n=== STUDENT SCORE ===");
         System.out.println("Midterm Exam Score: " + midterm);
         System.out.println("Final Exam Score: " + finalExam);
