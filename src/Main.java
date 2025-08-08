@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Student s1 = new Student("Ellyza Mae Lucero", 21, "BSIT", 91.0, 89.0, 80.0);
+        Student s1 = new Student("Ellyza Mae Ybañez", 21, "BSIT", 91.0, 89.0, 80.0);
         Student s2 = new Student("Kurt John Ong", 20, "BSBA", 96.0, 90.0, 75.0);
         Student s3 = new Student("Xyriel Angelo Ang", 23, "BSIT", 76.0, 77.0, 79.0);
 
