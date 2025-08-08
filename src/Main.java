@@ -1,18 +1,28 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int totalNumber = 0;
+        Student s1 = new Student("Ellyza Mae Lucero", 21, "BSIT", 91.0, 89.0, 80.0);
+        Student s2 = new Student("Kurt John Ong", 20, "BSBA", 96.0, 90.0, 75.0);
+        Student s3 = new Student("Xyriel Angelo Ang", 23, "BSIT", 76.0, 77.0, 79.0);
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.print("Enter number " + i + ": ");
-            int number = input.nextInt();
-            totalNumber += number;
+        Student[] students = {s1, s2, s3};
+        int passingCount = 0;
+
+        for (Student s : students) {
+            System.out.println("\nStudent Information:");
+            s.displayInfo();
+            double average = s.calculateAverage();
+            System.out.printf("Average: %.2f\n", average);
+            String letterGrade = s.getLetterGrade();
+            System.out.println("Letter Grade: " + letterGrade);
+
+            if (s.isPassing()) {
+                System.out.println("Status: PASSED");
+                passingCount++;
+            } else {
+                System.out.println("Status: FAILED");
+            }
         }
 
-        System.out.println("\nTotal Number: " + totalNumber);
-
-        input.close();
+        System.out.println("\nSummary: " + passingCount + " out of " + students.length + " students are passing.");
     }
 }
