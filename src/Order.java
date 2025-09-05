@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class Order {
+ class Order {
     private String customerName;
     private ArrayList<String> items;
     private ArrayList<Double> prices;
