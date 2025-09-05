@@ -51,7 +51,7 @@ public class Main {
                     highest = o;
                 }
             }
-            System.out.println("Highest Order: " + highest);
+            System.out.println("Largest Order: " + highest);
 
         } catch (Exception e) {
             System.out.println("Unexpected Error: " + e.getMessage());
