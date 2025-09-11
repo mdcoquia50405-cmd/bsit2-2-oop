@@ -23,6 +23,6 @@ public class Intern extends Employee {
     public void displayInfo() {
         super.displayInfo();
         System.out.println("University: " + university);
-        System.out.println("Full-Time: " + (isFullTime ? "Yes" : "No"));
+        System.out.println("Full-Time: " + (isFullTime ? "True" : "False"));
     }
 }
