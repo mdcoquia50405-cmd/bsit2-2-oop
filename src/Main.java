@@ -2,6 +2,11 @@ public class Main {
     public static void main(String[] args) {
         Manager manager = new Manager("Alice Smith", 2001, 80000, "Engineering", 15000, 8);
         System.out.println("\n--- Employee Details ---");
+        System.out.println("\nEmployee Alice Smith has been hired in Engineering department");
+        System.out.println("\nAlice Smith has been promoted to Manager");
+        System.out.println("\nEmployee Bob Johnson joined as a Java Developer");
+        System.out.println("\nEmployee Charlie Brown has been hired in Engineering department");
+        System.out.println("\nIntern Charlie Brown from Tech University has started");
 
         System.out.println("\n--- Employee Info ---");
         manager.displayInfo();
